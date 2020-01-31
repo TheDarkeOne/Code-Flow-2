@@ -56,5 +56,5 @@ defmodule CodeFlow.Railway do
     {:ok, %User{user | points: points + inc_by}}
   end
 
-  ef increment_points(error, _inc_by), do: {:error, "Wrong"}
+  def increment_points(error, _inc_by), do: {:error, "Wrong"}
 end
